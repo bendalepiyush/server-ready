@@ -100,12 +100,12 @@ describe("inputHanlde method", () => {
 
 describe("deleteMessage method", () => {
   test("should delete message", () => {
-    funcs.deleteMessage("http://localhost:3010/api/messages/1").then(data => {
+    funcs.deleteMessage("http://51.38.237.94:3010/api/messages/1").then(data => {
       return data;
     });
   });
 });
 
-mock.onGet("http://localhost:3010/api/messages/1").reply(200, {
+mock.onGet("http://51.38.237.94:3010/api/messages/1").reply(200, {
   message: "Hello there"
 });

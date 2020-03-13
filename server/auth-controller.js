@@ -70,6 +70,6 @@ module.exports = {
   logout: (req, res) => {
     req.session.destroy();
 
-    res.redirect('http://localhost:3000/');
+    res.redirect('http://51.38.237.94:3000/');
   }
 };

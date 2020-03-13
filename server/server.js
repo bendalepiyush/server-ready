@@ -47,7 +47,7 @@ app.post('/send-email', function(req, res) {
     }
   });
 
-  let content = `Thanks for signing up to Funday.com! You are now ready to invite members to your team. Sign in to the dashboard on Funday.com and send your team members an invite. <a href="http://localhost:3000/#/">Funday.com</a>`;
+  let content = `Thanks for signing up to Funday.com! You are now ready to invite members to your team. Sign in to the dashboard on Funday.com and send your team members an invite. <a href="http://51.38.237.94:3000/#/">Funday.com</a>`;
 
   let mailOptions = {
     from: creds.USER, // sender address
@@ -62,7 +62,7 @@ app.post('/send-email', function(req, res) {
     }
 
     console.log('Message %s sent: %s', info.messageId, info.response);
-    res.redirect('http://localhost:3000/#/dashboard');
+    res.redirect('http://51.38.237.94:3000/#/dashboard');
   });
 });
 
@@ -81,7 +81,7 @@ app.post('/add-member', function(req, res) {
     }
   });
 
-  const link = `<a href="http://localhost:3000/#/dashboard">Funday.com</a>`;
+  const link = `<a href="http://51.38.237.94:3000/#/dashboard">Funday.com</a>`;
   let content = `You have been invited to join Funday.com go to this link to join your team ${link}`;
 
   let mailOptions = {
@@ -97,7 +97,7 @@ app.post('/add-member', function(req, res) {
     }
 
     console.log('Message %s sent: %s', info.messageId, info.response);
-    res.redirect('http://localhost:3000/#/dashboard');
+    res.redirect('http://51.38.237.94:3000/#/dashboard');
   });
 });
 

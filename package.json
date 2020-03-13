@@ -37,10 +37,10 @@
   "main": "server/server.js",
   "proxy": {
     "/api": {
-      "target": "http://localhost:3010"
+      "target": "http://51.38.237.94:3010"
     },
     "/auth": {
-      "target": "http://localhost:3010"
+      "target": "http://51.38.237.94:3010"
     }
   },
   "devDependencies": {

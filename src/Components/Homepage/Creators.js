@@ -27,7 +27,7 @@ export default class Creators extends Component {
 
   handleSubmit = async e => {
     await axios
-      .post('http://localhost:3010/send-email')
+      .post('http://51.38.237.94:3010/send-email')
       .then(function(response) {
         console.log(response);
         this.setState({

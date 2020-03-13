@@ -37,7 +37,7 @@ class Header extends React.Component {
 
   handleSubmit = async e => {
     await axios
-      .post('http://localhost:3010/add-member')
+      .post('http://51.38.237.94:3010/add-member')
       .then(function(response) {
         console.log(response);
         this.setState({
