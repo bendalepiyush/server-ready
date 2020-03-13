@@ -51,7 +51,7 @@ app.post('/send-email', function(req, res) {
 
   let mailOptions = {
     from: creds.USER, // sender address
-    to: 'tessa.coddington1@gmail.com', // list of receivers
+    to: 'test@thetechnolover.com', // list of receivers
     subject: 'Welcome to Funday.com', // Subject line
     html: `<h2 style="color: black; padding: 10px; border: 3px solid #45336b; text-align: center">${content}</h2>` // html body
   };
@@ -68,12 +68,16 @@ app.post('/send-email', function(req, res) {
 
 app.post('/add-member', function(req, res) {
   let transporter = nodemailer.createTransport({
-    host: 'smtp.gmail.com',
-    port: 465,
-    secure: true,
+    name: "mail.thetechnolover.com",
+    host: "mail.thetechnolover.com",
+    port: 587,
+    secure: false,
     auth: {
-      user: creds.USER,
-      pass: creds.PASS
+		user: "test@thetechnolover.com",
+		pass: "Piyush@123"
+    },
+    tls: { 
+        rejectUnauthorized: false 
     }
   });
 
@@ -82,7 +86,7 @@ app.post('/add-member', function(req, res) {
 
   let mailOptions = {
     from: creds.USER, // sender address
-    to: 'tessa.coddington1@gmail.com', // list of receivers
+    to: 'test@thetechnolover.com', // list of receivers
     subject: 'Welcome to Funday.com', // Subject line
     html: `<h2 style="background: #0e0520; color: white; padding: 10px; border: 3px solid #45336b; text-align: center">${content}</h2>` // html body
   };
