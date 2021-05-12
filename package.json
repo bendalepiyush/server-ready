@@ -14,7 +14,7 @@
     "express-session": "^1.15.6",
     "jquery": "^3.3.1",
     "massive": "^5.5.0",
-    "nodemailer": "^4.6.8",
+    "nodemailer": "^6.4.16",
     "nodemailer-smtp-transport": "^2.7.4",
     "react": "^16.5.2",
     "react-anchor-link-smooth-scroll": "^1.0.11",
